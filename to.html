@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>To-Do-List </title>
+       <Style>
+              *{
+                     margin: 0px;
+                     padding: 0px;
+                     
+              }
+              body {
+                     font-style: italic;
+                     display: block;
+                     background-color:  rgb(173, 230, 211);
+                    
+              }
+            
+               #heading{
+                       display: flex;    
+                       justify-content: end; 
+                       height: 50px;
+                       border: 2px solid black;
+                         background-image: linear-gradient(to top, #ee1515, #fffd99);
+
+                       padding-top: 20px;
+                       cursor: pointer;
+                     }
+                     #to{
+                            text-align: center;
+                            margin-top: 10px;
+                     }
+                     #input{
+                       margin-left: 40%;
+                       width: 300px;
+                       height: 30px;
+                     }
+                     #btn{
+                            height: 31px;
+                            width: 50px;
+                            background-color: rgba(0, 0, 255, 0.619);
+                            color: white;
+                     }
+                     #nav{
+                            height: 25px;
+                           
+                            margin-top: 10px;
+                            display: flex;
+                            justify-content: center;
+                            
+                            
+                     }
+                     #nav p{
+                            margin-right: 10px;
+                     }
+                     #space{
+                            margin-top: 20px;
+                            height: 400px;
+                            width:350px ;
+                            margin-left: 40%;
+                            border: 2px solid lightblue;
+                          box-shadow: 5px 5px 5px 5px lightblue;
+                          overflow-y: scroll;
+
+                     }
+                     #space h4{
+                           margin-left: 5px;
+                            margin-top: 10px;
+                            overflow-wrap: break-word;
+                     }
+                     #space button{
+                            
+                     
+                    background-color:rgba(255, 0, 0, 0.526) ;
+                     margin-left: 230px;
+                     margin-top: 11px;
+                     border-radius: 5px;
+                     font-size: large;
+                     font-family:Georgia, 'Times New Roman', Times, serif;
+                     width: 100px;
+                            
+                     }
+       </Style>
+</head>
+
+<body>
+       <div id="main">
+               
+              <div id="heading">
+                    <p> Online Notepad </p>
+                     <p style="margin-left: 20px;">notepad</p>
+                     <p style="margin-left: 20px;">To-Do List</p>
+                     <p style="margin-left: 20px;"> Notes</p>
+              </div>
+              <h3 style="font-style: normal;" id="to">To-Do List</h3>
+              <input type="text" id="input">
+              <button id="btn">Add</button>
+              <div id="nav">
+                      <p style="background-color: aquamarine;">All</p>
+              <p style="background-color: rgba(255, 0, 0, 0.527);">Pending</p>
+              <p style="background-color: rgba(0, 128, 0, 0.427);">Complete</p>
+             
+              
+              </div>
+               <div id="space">
+                     
+               </div>
+            
+       </div>
+       <script src="to.js"></script>
+</body>
+
+</html>
